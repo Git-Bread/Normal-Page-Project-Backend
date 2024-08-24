@@ -65,8 +65,42 @@ footer {
     display: flex;
     justify-content: space-between;
     border-top: solid 5px #1E201E;
+    div {
+        @media screen and (max-width: 600px) {
+           width: 150%;
+        }
+    }
 }
 h5 {
     margin-top: auto;
-    margin-bottom: 1em;
+    margin: 1em;
+}
+#menu {
+    display: block;
+    min-height: 85vh;
+    width: 90%;
+    margin-top: 1em;  
+}
+#menuItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1em;   
+    @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+    }
+    div {
+        padding: 0.5em;
+        border-radius: 15px;
+        background-color: #1E201E;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div {
+            padding: 0;
+            display: block;
+            p {
+                margin-top: 0.5em;
+            }
+        }
+    }
 }
