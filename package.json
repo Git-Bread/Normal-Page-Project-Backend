@@ -1,11 +1,15 @@
 {
   "name": "normal-page",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "parcel",
+    "build": "parcel build"
   },
   "author": "Max Gagner",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sharp": "^0.31.3"
+  }
 }
